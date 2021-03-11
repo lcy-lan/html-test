@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>这是一个网页</title>
+	</head>
+	<body>
+		<form>
+			请输入您的真实姓名:<input type="text" name="姓名"/><br />
+			您的主页的网址:<input type="text" name="网址" value="HTTP://"/><br />
+			密码:<input type="text" name="密码"/><br />
+			<input type="submit" value="发送"  /><input type="submit" value="重设"  />
+			
+		</form>
+			
+	</body>
+</html>
