@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+		<div id="app">
+			幸运用户是:{{choosePeople}},恭喜你!
+			<input type="button" @click="rdm=Math.floor(Math.random()*10);choosePeople=peoples[rdm]" name="" id="" value="" />			
+			<div v-for="people in peoples">
+			</div>
+		</div>
+		<script src="js/vue.js" type="text/javascript" charset="UTF-8"></script>
+		<script type="text/javascript">
+			let app = new Vue({
+			  el: '#app',
+			  data: {
+			    choosePeople: '',
+				rdm:'',
+				peoples:[
+					{name:"赵一"},
+					{name:"宋二"},
+					{name:"张三"},
+					{name:"李四"},
+					{name:"王五"},
+					{name:"郑六"},
+					{name:"杨七"},
+					{name:"韩八"},
+					{name:"周九"},
+					{name:"孙十"}
+				]
+			  }
+			})
+		</script>
+	</body>
+</html>
